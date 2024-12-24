@@ -155,7 +155,7 @@ class RecipeVC: UIViewController {
         recipeEndPoint.createNewRecipe(apiVersion: "v0",recipeId: nil,recipeObj: recipeObj) { Result in
             switch (Result){
                 case .success(let recipe):
-                    print("new created :\(recipe)")
+                    print("new created and edited  :\(recipe)")
                 case .failure(let error):
                     print(error)
             }
