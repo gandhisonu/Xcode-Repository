@@ -1,0 +1,33 @@
+{
+  "title": "Delicious Pasta-01",
+  "category_ids": [
+    "345a6789-bcde-01fg-234h-567890123456",
+    "456e7890-12ab-34cd-56ef-789012345678"
+  ],
+  "device_id": "123e4567-e89b-12d3-a456-426614174001",
+  "ingredients": "Pasta, Tomato Sauce, Cheese",
+  "equipments": "Pot, Oven, Knife",
+  "steps": [
+    {
+      "info": {
+        "mode": "A2",
+        "temp": "204",
+        "temp_unit": "F",
+        "time": "50 min",
+        "description": ""
+      },
+      "assets": [
+        {
+          "asset_type": "image/png",
+          "asset_url": "https://s3.example.com/step1_image.png"
+        }
+      ],
+      "upload_assets": [
+        "image/jpeg",
+        "image/png",
+        "video/mp4"
+      ]
+    }
+  ],
+  "upload_asset": "image/jpeg"
+}

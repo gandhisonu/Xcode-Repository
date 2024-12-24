@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeTopCell" customModule="TestProject001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nup-6B-BJw" userLabel="mainView">
+                        <rect key="frame" x="2" y="0.0" width="343" height="211"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="696" translatesAutoresizingMaskIntoConstraints="NO" id="Go2-PB-aw3">
+                                <rect key="frame" x="14" y="11" width="252" height="199"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Go2-PB-aw3" firstAttribute="height" secondItem="Nup-6B-BJw" secondAttribute="height" multiplier="0.9" id="EsC-XL-Fco"/>
+                            <constraint firstItem="Go2-PB-aw3" firstAttribute="centerX" secondItem="Nup-6B-BJw" secondAttribute="centerX" id="MqN-iQ-AZt"/>
+                            <constraint firstItem="Go2-PB-aw3" firstAttribute="centerY" secondItem="Nup-6B-BJw" secondAttribute="centerY" id="Z5p-1m-c8F"/>
+                            <constraint firstItem="Go2-PB-aw3" firstAttribute="width" secondItem="Nup-6B-BJw" secondAttribute="width" multiplier="0.9" id="xbA-op-mbk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nup-6B-BJw" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="10" id="8hB-Ck-we1"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Nup-6B-BJw" secondAttribute="trailing" constant="10" id="Tgn-Up-mZN"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Nup-6B-BJw" secondAttribute="bottom" constant="10" id="U0b-vm-OVg"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="Nup-6B-BJw" secondAttribute="top" constant="10" id="lF3-8d-CBO"/>
+            </constraints>
+            <size key="customSize" width="206" height="118"/>
+            <connections>
+                <outlet property="imgView" destination="Go2-PB-aw3" id="SY1-VT-cKk"/>
+                <outlet property="mainView" destination="Nup-6B-BJw" id="Kad-zJ-aRZ"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="48.943661971830991"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="696" width="600" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

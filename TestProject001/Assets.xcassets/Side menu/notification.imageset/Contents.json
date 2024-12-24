@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_notifications_24px.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

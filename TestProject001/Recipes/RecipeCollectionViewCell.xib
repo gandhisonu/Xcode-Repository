@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecipeCollectionViewCell" customModule="TestProject001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctg-Pt-fL9" userLabel="mainView">
+                        <rect key="frame" x="5" y="-5" width="186" height="61"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-9c-KXZ" customClass="AppButton" customModule="Ardent" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="176" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Kg-9c-KXZ" firstAttribute="top" secondItem="Ctg-Pt-fL9" secondAttribute="top" constant="10" id="956-gi-Nrx"/>
+                            <constraint firstAttribute="bottom" secondItem="4Kg-9c-KXZ" secondAttribute="bottom" id="TSY-tR-Cdh"/>
+                            <constraint firstAttribute="trailing" secondItem="4Kg-9c-KXZ" secondAttribute="trailing" id="XUw-cC-tlP"/>
+                            <constraint firstItem="4Kg-9c-KXZ" firstAttribute="leading" secondItem="Ctg-Pt-fL9" secondAttribute="leading" constant="10" id="ykP-l9-AGC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ctg-Pt-fL9" secondAttribute="bottom" constant="5" id="GZi-Hs-iUt"/>
+                <constraint firstAttribute="top" secondItem="Ctg-Pt-fL9" secondAttribute="top" constant="5" id="fy7-i3-v4L"/>
+                <constraint firstAttribute="trailing" secondItem="Ctg-Pt-fL9" secondAttribute="trailing" constant="5" id="uTL-15-Fhk"/>
+                <constraint firstItem="Ctg-Pt-fL9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="xgH-Da-VmJ"/>
+            </constraints>
+            <size key="customSize" width="196" height="61"/>
+            <connections>
+                <outlet property="mainView" destination="Ctg-Pt-fL9" id="yPF-ED-gsu"/>
+                <outlet property="recipeCategoryBtn" destination="4Kg-9c-KXZ" id="3eT-J2-1eI"/>
+            </connections>
+            <point key="canvasLocation" x="13.740458015267174" y="-14.43661971830986"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
